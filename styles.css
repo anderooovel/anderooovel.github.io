@@ -1,0 +1,19 @@
+p{
+	font-family: 'Manslava', cursive;
+	color: grey;
+}
+
+h1 {
+	color: Black;
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2 {
+	text-align:center;
+	text-decoration: underline;
+}
+
+.special {
+	font-size: 25px;
+}
