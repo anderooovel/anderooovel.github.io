@@ -82,7 +82,7 @@ nav ul li {
 		color: #525252;
 }
 .bot img {
-	width: 100%;
+	height: 100%;
 	align-self: flex-end;
 }
 @media only screen and (max-width: 1455px) {
