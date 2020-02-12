@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	Digibook
+	</title>
+	<link href = "favicon.png" rel="shortcut icon">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Cambay&display=swap" rel="stylesheet">
+</head>
+<body>
+			<div id="invis">
+				<nav>
+					<ul>
+						<a href="#top"><li class="logo"><img src="logo.svg"></li></a>
+						<a href="#description"><li class="navtext">Description</li></a>
+						<a href="#problem"><li class="navtext">Problem</li></a>
+						<a href="#user"><li class="navtext">User Segment</li></a>	
+						<a href="#prototype"><li class="navtext">Prototype</li></a>
+					</ul>
+				</nav>
+			</div>
+	<header id="top">
+		<nav>
+		<ul>
+			<a href="#top"><li class="logo"><img src="logo.svg"></li></a>
+			<a href="#description"><li class="navtext">Description</li></a>
+			<a href="#problem"><li class="navtext">Problem</li></a>
+			<a href="#user"><li class="navtext">User Segment</li></a>	
+			<a href="#prototype"><li class="navtext">Prototype</li></a>
+		</ul>
+		</nav>
+			</header>
+		<div class="ad">
+			<div class="top">
+				<img src="topPhone2.png" id="topPhone">
+				<div class="adtext">
+					<h1>The notebook that replaces paper.</h1>
+						<p>The digital notebook where you can sketch and write anything you want.</p>
+				</div>
+			</div>
+				<div class="bot">
+					<img src="botPhone.png">
+				</div>
+		</div>
+		
+		
+		
+		
+		<div class="tableindex" id="description">
+			<div class="indextablespacing">
+			</div>
+		<ul>
+		
+		<li>
+			<div>
+			<img src="table1.svg" >
+			<h1>Digital notebooks</h1>
+			<p>Digibook makes notebooks digital.</p>
+			</div>
+		</li>
+		
+		<li>
+			<div>	
+			<img src="table2.svg">
+			<h1>Easy to use</h1>
+			<p>Get started in seconds.</p>
+			</div>
+		</li>
+		
+		<li>
+			<div>
+			<img src="table3.svg">
+			<h1>Save money</h1>
+			<p>Buying notebooks is no longer necessary.</p>
+			</div>
+		</li>
+		
+		</div>
+	
+		<div class="indextablespacing">
+		</div>
+		
+
+
+		<div class="problemsection" id="problem">
+			<ul>
+				<li>
+					<div class="foresttext">
+						<div>
+						<h1>Help the world with Digibook</h1>
+							<p>Lots of trees go to making notebooks, but with making things digital, cutting down forests will no longer be necessary. Save the world from global warming by making paper digital!</p>
+						</div>
+					</div>
+				</li>
+					<li>
+						<div class="forestdiv">
+							<img src="forest.svg">
+						</div>
+					</li>
+			</ul>
+		</div>
+		
+		<div class="usersegment" id="user">
+			<ul>
+				<li>
+				<div class="userimgarea"><div class="userimg"></div></div>
+				</li>
+				<li>
+					<div class="usertext">
+						<div>
+						<h1>Is this app for you?</h1>
+							<p>This app was made for students, but really anyone who wants to write something down can use it very efficiently (ex. Businessmen, teachers etc.)</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="prototype" id="prototype">
+			<ul>
+				<li>
+					<div class="prototext">
+						<div>
+						<h1>Try out the prototype</h1>
+							<p>Click on the phone to test out the app and see if it fits you.</p>
+							<p>You also try out the HTML version by clicking <a href="prototype.html">here</a>.</p>
+						</div>
+					</div>
+				</li>
+					<li>
+						<div class="iphoneAdDiv">
+					 		<a href="prototype.html"><img src="iphoneAd.png"></a>
+					 	</div>
+					</li>
+			</ul>
+
+
+
+		</div>
+
+
+
+		<footer>
+					<ul>
+						<li class="footertext"><a href="#description">Description</a></li>
+						<li class="footertext"><a href="#problem">Problem</a></li>
+						<li class="footertext"><a href="#description">User Segment</a></li>
+						<li class="footertext"><a href="#prototype">Prototype</a></li>
+					</ul>
+		</footer>
+
+
+
+		<script type="text/javascript">
+			var header = document.getElementById("invis");
+
+			window.onscroll = function() {
+
+				if (window.pageYOffset > 90) {
+					console.log("boop");
+					header.classList.add("fixed");
+					header.style.display = "block";
+				} else {
+					header.classList.remove("fixed");
+					header.style.display = "none";
+				}
+
+
+			}
+
+
+
+		</script>
+</body>
+</html>

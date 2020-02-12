@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<title>Nice Website</title>
+		<link rel="stylesheet" href="stylesproto.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main-div">
+			<header>
+				<h1>DigiBook</h1>
+				<img src="menuicon.png" id="menuicon" onclick="menu()">
+			</header>
+
+			<div class="textarea" id="textarea">
+
+				<div class="options" id="options">
+
+					<ul>
+
+						<li><h1>Paper</h1></li>
+							<li>
+								<div class="paper">
+									<p onclick="line()" id="line">Line</p>
+										<p onclick="square()" id="square">Square</p>
+											<p onclick="blank()" id="blank">Blank</p>
+												<p onclick="sheet()" id="sheet">Sheet</p>
+								</div>
+							</li>
+								<li><h1>Font</h1></li>
+									<li>
+										<div class="font">
+											<p onclick="arial()" id="arial">Arial</p>
+												<p onclick="roboto()" id="roboto">Roboto</p>
+													<p onclick="comicsans()" id="comicsans">Comic Sans</p>
+										</div>
+									</li>
+										<li><h1>Font Size</h1></li>
+											<li>
+												<div class="fontsize">
+													<p onclick="small()" id="small">Small</p>
+														<p onclick="medium()" id="medium">Medium</p>
+															<p onclick="large()" id="large">Large</p>
+												</div>
+											</li>
+
+					</ul>
+						<p id="save" onclick="save()">Save</p>
+				</div>
+					<div class="writearea" id="writearea">
+						<textarea id="writing"></textarea>
+					
+					</div>	
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+			var paper = "";
+			var font = "";
+			var size = "";
+			var height= "";
+
+			function line () {
+				paper = "url('line.png')";
+				document.getElementById("line").style.backgroundColor = "#00b37d";
+				document.getElementById("square").style.backgroundColor = "#00dd9b";
+				document.getElementById("blank").style.backgroundColor = "#00dd9b";
+				document.getElementById("sheet").style.backgroundColor = "#00dd9b";
+				height = "39.5px";
+			}
+				function square () {
+					paper = "url('square.png')";
+					document.getElementById("line").style.backgroundColor = "#00dd9b";
+					document.getElementById("square").style.backgroundColor = "#00b37d";
+					document.getElementById("blank").style.backgroundColor = "#00dd9b";
+					document.getElementById("sheet").style.backgroundColor = "#00dd9b";
+					height = "45px";
+				}
+					function blank () {
+						paper = "";
+						document.getElementById("line").style.backgroundColor = "#00dd9b";
+						document.getElementById("square").style.backgroundColor = "#00dd9b";
+						document.getElementById("blank").style.backgroundColor = "#00b37d";
+						document.getElementById("sheet").style.backgroundColor = "#00dd9b";
+						height = "35px";
+					}
+						function sheet () {
+							paper = "url('sheet.png')";
+							document.getElementById("line").style.backgroundColor = "#00dd9b";
+							document.getElementById("square").style.backgroundColor = "#00dd9b";
+							document.getElementById("blank").style.backgroundColor = "#00dd9b";
+							document.getElementById("sheet").style.backgroundColor = "#00b37d";
+							height = "50px";
+						}
+
+
+			function arial () {
+				font = 'Arial, Helvetica, sans-serif';
+				document.getElementById("arial").style.backgroundColor = "#00b37d";
+				document.getElementById("roboto").style.backgroundColor = "#00dd9b";
+				document.getElementById("comicsans").style.backgroundColor = "#00dd9b";
+			}
+				function roboto () {
+					font = "'Roboto', sans-serif";
+					document.getElementById("arial").style.backgroundColor = "#00dd9b";
+					document.getElementById("roboto").style.backgroundColor = "#00b37d";
+					document.getElementById("comicsans").style.backgroundColor = "#00dd9b";
+				}
+					function comicsans () {
+						font = '"Comic Sans MS", cursive, sans-serif';
+						document.getElementById("arial").style.backgroundColor = "#00dd9b";
+						document.getElementById("roboto").style.backgroundColor = "#00dd9b";
+						document.getElementById("comicsans").style.backgroundColor = "#00b37d";
+					}
+
+			function small () {
+				size = "0.5em";
+				document.getElementById("small").style.backgroundColor = "#00b37d";
+				document.getElementById("medium").style.backgroundColor = "#00dd9b";
+				document.getElementById("large").style.backgroundColor = "#00dd9b";
+
+			}
+				function medium () {
+					size = "1em";
+					document.getElementById("small").style.backgroundColor = "#00dd9b";
+					document.getElementById("medium").style.backgroundColor = "#00b37d";
+					document.getElementById("large").style.backgroundColor = "#00dd9b";
+				}
+					function large () {
+						size = "2em";
+						document.getElementById("small").style.backgroundColor = "#00dd9b";
+						document.getElementById("medium").style.backgroundColor = "#00dd9b";
+						document.getElementById("large").style.backgroundColor = "#00b37d";
+					}
+
+		function save () {
+			document.getElementById("options").style.display = "none";
+			document.getElementById("writearea").style.display = "block";
+			document.getElementById("menuicon").style.display = "block";
+
+
+			document.getElementById("textarea").style.backgroundImage = paper;
+			document.getElementById("writing").style.fontFamily = font;
+			document.getElementById("writing").style.fontSize = size;
+			document.getElementById("writing").style.lineHeight = height;
+		}
+		function menu () {
+			document.getElementById("menuicon").style.display = "none";
+			document.getElementById("options").style.display = "block";
+			document.getElementById("writearea").style.display = "none";
+			
+			document.getElementById("textarea").style.backgroundImage = "";
+			document.getElementById("writing").style.fontFamily = "";
+			document.getElementById("writing").style.fontSize = "";
+			document.getElementById("writing").style.lineHeight = "";
+		}
+
+
+		</script>
+
+
+	</body>
+</html>
